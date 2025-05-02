@@ -1,11 +1,22 @@
 /* CSS File */
+@font-face {
+    font-family: 'architect';
+    src: url('font/ArchitectsDaughter.woff2') format('woff2'),
+         url('font/ArchitectsDaughter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 * {
     border-style: border-box;
     margin: 0;
     padding: 0;
     /* border: 1px solid red; */
-    font-family: ;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 html {
     height: 100%;
@@ -27,9 +38,17 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* subtle separator */
 }
 
-form {
+fieldset {
     width: 100%;
     height: auto;
+    max-width: 400px;
+    margin: 1rem 0; 
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin-top: 3rem;
 }
 
 .sidebar {
@@ -47,17 +66,34 @@ form {
     background-position: center;   /* centers the image */
     background-repeat: no-repeat;  /* prevents tiling */
 
-    
-   
-
     padding: 20px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  
+}
 .message {
     color:#f1f1f1;
+    font-family: architect, cursive;
     
 }
-.container {
+
+.intro {
+    font-family: architect, cursive;
+    font-size: 1.5rem;
+    font-style: 900;
+
+}
+
+.text{
+    font-family: architect, cursive;
+    font-size: 1rem;
+}
+
+.sidebar .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -83,3 +119,73 @@ form {
     width: 100%;
    
 }
+
+.form .container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 0;
+    margin: 1rem 0.5rem;
+}
+
+.create-account-btn {
+    padding: 0.75rem 2rem;
+    background-color: #596D48; /* Bootstrap blue */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: architect, cursive;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
+  }
+  
+  .create-account-btn:hover {
+    background-color: #4e5f3f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .create-account-btn:active {
+    background-color: #3f4e33; /* Even darker for active click */
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .input {
+    display:flex;
+    flex-direction: column;
+  }
+
+  input {
+    border: 1px solid #E5E7EB;
+    height: 1.5rem;
+  }
+
+
+
+  input:invalid {
+    border: 1px solid #d93025; /* Clear red for error */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 48, 37, 0.2); /* Soft red glow */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border: 1px solid rgb(7, 7, 88); /* Deep blue focus border */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(25, 25, 87, 0.15); /* Soft blue glow around input */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+   
+  }

@@ -18,15 +18,59 @@
     </div>
 
     <div class="main">
-        <div class="text">
-            Step Into the Wild!
+        <div class="intro">
+            Step Into the Wild! <br>
         </div>
         <div class="text">
-            Join our community of explorers and nature lovers.
-Sign up now and begin your journey into the heart of the woods—where every path leads to discovery
+            Join our community of explorers and nature lovers. <br><br>
+            Sign up now and begin your journey into the heart of the woods—where every path leads to discovery!
         </div>
         <div class="form">
             <form>
+                <fieldset>
+                    <h3> Let's Do This! </h3> <br>
+                    <div class="container">
+                        <div class="input">
+                            <label for="firstName"> First Name : </label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+            
+                        <div class="input">
+                            <label for="lastName"> Last Name :</label>
+                            <input type="text"  id="lastName" name="lastName">
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="input">
+                            <label for="email"> Email : </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="input">
+                            <label for="mobileno"> Mobile Number: </label>
+                            <input type="text" id="mobileno" name="mobileno"  pattern="(\d{4}([\-]\d{7})?)" value="0928-1234567" required title="Input in this format: 09xx-1234567">                       </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="input">
+                            <label for="password"> Nominate Password: </label>
+                            <input type="password" required min="6" id="password" name="password">
+                        </div>
+                        <div class="input">
+                            <label for="confirmPassword"> Confirm Password: </label>
+                            <input type="password" required min="6" id="confirmPassword" name="confirmPassword">
+                        </div>
+                    </div>
+
+
+                </fieldset>
+               
+                <button type="submit" action="#" method="post" class="create-account-btn"> Create Account </button>
+
+           
+
+
 
             </form>
             <p> Already have account? <a href=""> Log In </a></p> 
