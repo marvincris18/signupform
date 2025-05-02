@@ -1,0 +1,85 @@
+/* CSS File */
+* {
+    border-style: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    font-family: ;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    color: #f1f1f1; /* light text for contrast */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* subtle separator */
+}
+
+form {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis : 33%;
+    flex-shrink: 0;
+
+    height: 100vh;
+    justify-content: space-between; /* Push footer down */
+    align-items: center; /* Center horizontally */
+
+    background-image: url('img/peter-robbins-CvP-KPrxQd4-unsplash.jpg'); /* relative to CSS file */
+    background-size: cover;        /* ensures it covers the whole area */
+    background-position: center;   /* centers the image */
+    background-repeat: no-repeat;  /* prevents tiling */
+
+    
+   
+
+    padding: 20px;
+}
+
+.message {
+    color:#f1f1f1;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 3px solid #f1f1f1;
+    padding: 15px;
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center it horizontally */
+  }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+   
+}
